@@ -1,0 +1,16 @@
+@import '../../styles/global.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-image: url("../../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: relative;
+}

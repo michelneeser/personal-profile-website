@@ -1,0 +1,26 @@
+@import '../../styles/global.scss';
+
+.section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.icon-container {
+  color: #fff;
+  text-align: center;
+  width: 8rem;
+  margin: 1rem 1rem;
+  
+  i {
+    font-size: 4rem;
+  }
+
+  div {
+    background-color: $primary-color;
+    padding: 0.2rem;
+    margin-top: 1rem;
+    border-radius: 10rem;
+  }
+}

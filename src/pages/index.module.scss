@@ -8,10 +8,10 @@
 
 html {
   background: url('../images/bg.jpg');
-  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body {
@@ -19,48 +19,35 @@ body {
 }
 
 .box {
-  z-index: 10;
-  background: rgba(34, 51, 68, 0.9);
-  height: 100vh;
-  width: 60vw;
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: rgba($secondary-color, 0.9);
+  height: 100vh;
+  width: 60vw;
+  margin: auto;
   padding: 3rem;
-  border-left: 0.3rem double rgba(129,89,76, 0.7);
-  border-right: 0.3rem double rgba(129,89,76, 0.7);
-  height: 3000px;
-  box-shadow: 0 0 16px 4px black;
+  border-left: 0.3rem double rgba($primary-color, 0.7);
+  border-right: 0.3rem double rgba($primary-color, 0.7);
+  box-shadow: 0 0 16px 4px #000;
+  height: 3000px; // temporary
 }
-
-@media (max-width: 960px) {
-  .box {
-    width: 100vw;
-  }
-} 
 
 .portrait {
   height: 15rem;
   border: 0.3rem solid rgb(129,89,76);
   border-radius: 50%;
-  box-shadow: 8px 8px 16px;
+  box-shadow: 8px 8px 16px #000;
 }
 
 h1 {
-  color: white;
-  background-color: rgb(129,89,76);
-  padding: 0.5rem 1rem;
+  @include main-headline;
   margin: 2rem 0 0 0;
-  box-shadow: 8px 8px 16px black;
 }
 
 h2 {
-  color: white;
-  background-color: rgb(129,89,76);
-  padding: 0.5rem 1rem;
+  @include main-headline;
   margin: 1rem 0;
-  box-shadow: 8px 8px 16px black;
 }
 
 h3 {
@@ -69,8 +56,12 @@ h3 {
   margin: 0.6rem 0;
 }
 
-.content-box {
-  margin-top: 4rem;
-  width: 50vw;
-  border-top: 0.3rem solid rgb(129,89,76);
+///////////////////
+// media queries //
+///////////////////
+
+@media (max-width: 960px) {
+  .box {
+    width: 100vw;
+  }
 }

@@ -1,2 +1,13 @@
-$primary: rgb(34, 51, 68);
-$secondary: rgb(219, 168, 0);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap');
+@import url('https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css');
+
+// colors
+$primary-color: rgb(129,89,76);
+$secondary-color: rgb(34, 51, 68);
+
+@mixin main-headline {
+  color: #fff;
+  background-color: $primary-color;
+  padding: 0.5rem 1rem;
+  box-shadow: 8px 8px 16px #000;
+}

@@ -28,9 +28,10 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 3rem;
-  border-left: 0.3rem solid rgb(129,89,76);
-  border-right: 0.3rem solid rgb(129,89,76);
+  border-left: 0.3rem double rgba(129,89,76, 0.7);
+  border-right: 0.3rem double rgba(129,89,76, 0.7);
   height: 3000px;
+  box-shadow: 0 0 16px 4px black;
 }
 
 @media (max-width: 960px) {
@@ -43,6 +44,7 @@ body {
   height: 15rem;
   border: 0.3rem solid rgb(129,89,76);
   border-radius: 50%;
+  box-shadow: 8px 8px 16px;
 }
 
 h1 {
@@ -50,13 +52,15 @@ h1 {
   background-color: rgb(129,89,76);
   padding: 0.5rem 1rem;
   margin: 2rem 0 0 0;
+  box-shadow: 8px 8px 16px black;
 }
 
 h2 {
   color: white;
   background-color: rgb(129,89,76);
   padding: 0.5rem 1rem;
-  margin: 0.6rem 0;
+  margin: 1rem 0;
+  box-shadow: 8px 8px 16px black;
 }
 
 h3 {

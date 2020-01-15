@@ -48,23 +48,39 @@ body {
   box-shadow: 8px 8px 16px #000;
 }
 
-h1 {
-  color: #fff;
-  background-color: $primary-color;
-  padding: 0.5rem 1rem;
-  box-shadow: 8px 8px 16px #000;
-  font-size: 1.8rem;
-  margin: 2rem 0 0 0;
-}
+.title {
+  margin-bottom: 1rem;
 
-h2 {
-  @extend h1;
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
+  h1 {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-color: $primary-color;
+    padding: 0.5rem 1rem;
+    box-shadow: 2px 8px 16px #000;
+    font-size: 1.8rem;
+    transform: translateY(-1rem);
+    z-index: 20;
 
-h3 {
-  color: #fff;
-  padding: 0.5rem 1rem;
-  margin: 0.6rem 0;
+    @media (max-width: 960px) {
+      display: block;
+      margin-top: 1rem;
+      transform: none;
+      z-index: 0
+    }
+  }
+  
+  h2 {
+    @extend h1;
+    font-size: 1.2rem;
+    transform: translateX(-0.3rem);
+    z-index: 10;
+
+    @media (max-width: 960px) {
+      display: block;
+      transform: none;
+      z-index: 0;
+    }
+  }
 }

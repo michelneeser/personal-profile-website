@@ -4,10 +4,3 @@
 // colors
 $primary-color: rgb(129,89,76);
 $secondary-color: rgb(34, 51, 68);
-
-@mixin main-headline {
-  color: #fff;
-  background-color: $primary-color;
-  padding: 0.5rem 1rem;
-  box-shadow: 8px 8px 16px #000;
-}

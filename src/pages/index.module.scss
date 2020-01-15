@@ -1,4 +1,4 @@
-@import '../styles/global.scss';
+@import '../styles/global';
 
 * {
   box-sizing: border-box;
@@ -7,11 +7,13 @@
 }
 
 html {
-  background: url('../images/bg.jpg');
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: {
+    image: url('../images/bg.jpg');
+    position: center center;
+    attachment: fixed;
+    size: cover;
+    repeat: no-repeat;
+  }
 }
 
 body {
@@ -27,10 +29,16 @@ body {
   width: 60vw;
   margin: auto;
   padding: 3rem;
-  border-left: 0.3rem double rgba($primary-color, 0.7);
-  border-right: 0.3rem double rgba($primary-color, 0.7);
+  border: {
+    left: 0.3rem double rgba($primary-color, 0.7);
+    right: 0.3rem double rgba($primary-color, 0.7);
+  }
   box-shadow: 0 0 16px 4px #000;
   height: 3000px; // temporary
+
+  @media (max-width: 960px) {
+    width: 100vw;
+  }
 }
 
 .portrait {
@@ -41,27 +49,22 @@ body {
 }
 
 h1 {
-  @include main-headline;
+  color: #fff;
+  background-color: $primary-color;
+  padding: 0.5rem 1rem;
+  box-shadow: 8px 8px 16px #000;
+  font-size: 1.8rem;
   margin: 2rem 0 0 0;
 }
 
 h2 {
-  @include main-headline;
+  @extend h1;
+  font-size: 1.2rem;
   margin: 1rem 0;
 }
 
 h3 {
-  color: white;
+  color: #fff;
   padding: 0.5rem 1rem;
   margin: 0.6rem 0;
-}
-
-///////////////////
-// media queries //
-///////////////////
-
-@media (max-width: 960px) {
-  .box {
-    width: 100vw;
-  }
 }

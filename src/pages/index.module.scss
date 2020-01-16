@@ -7,6 +7,7 @@
 }
 
 html {
+  color: #fff;
   background: {
     image: url('../images/bg.jpg');
     position: center center;
@@ -54,7 +55,6 @@ body {
   h1 {
     display: inline-block;
     position: relative;
-    color: #fff;
     text-align: center;
     background-color: $primary-color;
     padding: 0.5rem 1rem;

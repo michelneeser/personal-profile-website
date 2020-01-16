@@ -1,0 +1,35 @@
+@import '../../styles/global';
+
+.jobs {
+  box-shadow: 0 0 0.5rem;
+  padding: 1rem;
+
+  .title {
+    border-bottom: 1px solid #fff;
+    position: relative;
+
+    > div {
+      margin-bottom: 1rem;
+
+      :nth-child(1) {
+        background-color: $primary-color;
+        padding: 0.2rem 1rem;
+        box-shadow: 0 0 3px #000;
+      }
+
+      :nth-child(2) {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  .accountabilities {
+    line-height: 2;
+
+    ul {
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
+  }
+}

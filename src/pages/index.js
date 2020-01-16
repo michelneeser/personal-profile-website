@@ -2,6 +2,7 @@ import React from 'react';
 
 import SocialIcons from '../components/social-icons/SocialIcons';
 import About from '../components/about/About';
+import Experience from '../components/experience/Experience';
 import Skills from '../components/skills/Skills';
 
 import styles from './index.module.scss';
@@ -17,6 +18,7 @@ const IndexPage = () => (
       </div>
       <SocialIcons />
       <About />
+      <Experience />
       <Skills />
     </div>
   </div>

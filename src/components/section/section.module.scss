@@ -1,12 +1,14 @@
 @import '../../styles/global';
 
 h3 {
-  margin: 1rem 1rem;
+  margin: 1rem 1rem 1.2rem 1rem;
+  font-size: 1.5rem;
 }
 
 .container {
-  margin-top: 3rem;
-  width: 50vw;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  width: 51vw;
   border-top: 0.3rem solid rgb(129,89,76);
 
   @media (max-width: 960px) {

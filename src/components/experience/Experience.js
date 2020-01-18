@@ -23,9 +23,9 @@ const Experience = () => {
             </div>
             <div className={styles.accountabilities}>
               <ul>
-                <li>Leading the technical development and planning of flagship web projects.</li>
+                <li>Leading the technical development and planning of several of MySign's flagship web projects.</li>
                 <li>Conception of data exchange interfaces to third party systems of customers.</li>
-                <li>Responsible the vocational training of software developer trainees.</li>
+                <li>Responsible for the vocational training of software developer trainees.</li>
               </ul>
             </div>
             <div className={styles.date}>
@@ -49,7 +49,7 @@ const Experience = () => {
             <div className={styles.accountabilities}>
               <ul>
                 <li>Technical conception and development of MySign products and customer projects.</li>
-                <li>Principal software developer of some of the flagship web projects of MySign.</li>
+                <li>Principal software developer in some of the flagship web projects of MySign.</li>
                 <li>Vocational training of software developer trainees.</li>
               </ul>
             </div>

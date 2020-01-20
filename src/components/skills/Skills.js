@@ -64,6 +64,7 @@ const Skills = () => {
             <i className="devicon-tomcat-line"></i>
             <div>Tomcat</div>
           </div>
+          {/* + Maven */}
         </div>
       </Section>
       <Section title="Skills / Tools">
